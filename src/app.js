@@ -8,9 +8,15 @@ async function fetchCountries(){
         const countriesList = document.getElementById('countryList');
         const countryDetail = document.createElement("li");
         countryDetail.innerHTML =
-            `<li> Dit zijn de talen : ${response.data[0].languages[1].name}</li>`
+            `<li> Land : ${response.data[0].name}</li>`
         ;
         countriesList.appendChild(countryDetail);
+
+        const countryDetail2 = document.createElement("li");
+        countryDetail2.innerHTML =
+            `<li> Has a population of ${response.data[0].population} people </li>`
+        ;
+        countriesList.appendChild(countryDetail2);
     }
     catch (e){
         console.log(e);
