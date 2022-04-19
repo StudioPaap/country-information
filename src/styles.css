@@ -1,0 +1,75 @@
+/*-------------Global styles---------------*/
+var  root{
+          --blue:#768abd;
+          --red: #c15b5d;
+          --yellow: #f8db81;
+          --lightgreen:#91c79b;
+          --darkgreen: #6d8e66;
+          --purple: #9256aa;
+      }
+
+      body{
+          margin: 0;
+          box-sizing: border-box;
+      }
+/*-------------Typografie---------------*/
+.red-box {
+    border: red solid 3px;
+}
+
+#landenlijst{
+    border: green solid 5px;
+}
+
+#countryList{
+    border: red solid 5px;
+}
+
+#vlagAfbeelding{
+    border: #9256aa solid 4px;
+    with: 10%;
+}
+
+/*-------------kleuren landen ---------------*/
+
+.Africa{
+    color: var(--blue);
+}
+
+.Asia{
+    color: var(--red);
+}
+
+.Europe{
+    color: var(--yellow);
+}
+
+.Oceania{
+    color: var(--purple);
+}
+
+.Americas{
+    color: var(--darkgreen);
+}
+
+.South-America{
+    color: var(--lightgreen);
+}
+
+/*-------------Layout ---------------*/
+
+/*-------------Area's ---------------*/
+
+
+/*-------------Sectie 1 banner met afbeelding ---------------*/
+.foto-sectie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid blue 2px;
+}
+
+.foto-landkaart{
+    width: 60%;
+    height: auto;
+}
