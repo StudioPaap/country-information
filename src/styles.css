@@ -13,47 +13,59 @@ var  root{
           box-sizing: border-box;
       }
 /*-------------Typografie---------------*/
-.red-box {
-    border: red solid 3px;
+
+
+#countryList img{
+    width: 50px;
+    display: inline-block;
+    padding-top: 50px;
+
+}
+#countryList {
+    column-count: 3;
+    max-width: 1000px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    background-color: #FAFAFA;
+    padding: 30px;
 }
 
-#landenlijst{
-    border: green solid 5px;
+#countryList li {
+    list-style-type: none;
+    margin-left:120px;
+    font-family: "Semplicita Pro";
+
 }
 
-#countryList{
-    border: red solid 5px;
+#countryList span{
+    font-size: 18px;
 }
-
-#vlagAfbeelding{
-    border: #9256aa solid 4px;
-    with: 10%;
-}
-
 /*-------------kleuren landen ---------------*/
 
 .Africa{
-    color: var(--blue);
+    color: #768abd;
 }
 
 .Asia{
-    color: var(--red);
+    color: #c15b5d;
 }
 
 .Europe{
-    color: var(--yellow);
+    color: #f8db81;
 }
 
 .Oceania{
-    color: var(--purple);
+
+    color: #9256aa;
 }
 
 .Americas{
-    color: var(--darkgreen);
+    color: #6d8e66;
+
 }
 
 .South-America{
-    color: var(--lightgreen);
+    color: #91c79b;
 }
 
 /*-------------Layout ---------------*/
