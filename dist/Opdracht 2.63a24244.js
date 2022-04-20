@@ -140,12 +140,12 @@
       this[globalName] = mainExports;
     }
   }
-})({"1Mq12":[function(require,module,exports) {
+})({"CxEYi":[function(require,module,exports) {
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "4a236f9275d0a351";
-module.bundle.HMR_BUNDLE_ID = "b5b6c481d56a3cb1";
+module.bundle.HMR_BUNDLE_ID = "3270decb63a24244";
 "use strict";
 function _createForOfIteratorHelper(o, allowArrayLike) {
     var it;
@@ -458,39 +458,31 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"5HwUs":[function(require,module,exports) {
+},{}],"7z7IC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-/* hier declareer ik de functie*/ async function fetchCountries() {
-    try {
-        /* Hier wordt de lijst weergeven vanuit de API en heet nu Response, daarna noem ik het countries ----*/ const response = await _axiosDefault.default.get('https://restcountries.com/v2/all');
-        const countries = response.data;
-        // Hier sorteer ik de lijst
-        countries.sort((a, b)=>{
-            return a.population - b.population;
-        });
-        // Hier worden elementen in de HTML aangemaakt
-        const countriesList = document.getElementById('countryList');
-        // hier worden li items toegeovegd. Ik heb geen aparte functie gemaakt die checkt welke region het is, dit kon je ook uit de lijst halen en laten corresponderen met je class.
-        countriesList.innerHTML = countries.map((landen)=>{
-            return `
+/*     ---------------- Stappenplan!!!------------------------------------------------
+1. Nieuwe variabele waarin we de endpoint opslaan aanmaken
+2. We hebben .name nodig van elke country, zodat we bij het object van elk land kunnen komen.
+3. We moeten een kleine zoekfunctie maken met een invulveld en een submit knop.
+4. De submit eventListener moet de gegevens doorgeven en opslaan onder de {naam} en deze vervangen.
+5. Via de inner html kunnen we de gegevens die we uit het object willen op de pagina weergeven
+6. Ik maak een class op die er voor zorgt dat de informatie netjes wordt weergevem
+7. een andere functie checkt of er wel een echt land is ingevoerd, als deze niet overeenkomt met de lijst, bericht sturen
+8. We moeten een truthy maken waarbij de gegevens worden gecehkt op dubbele data, ander samen worden weergegeven anders 1 enkele.
 
-    <li>
-      <img src="${landen.flag}">
-      <span class="${landen.region}"> ${landen.name}</span>
-      <p> Has a population of ${landen.population} people</p>
-    </li>
-    `;
-        }).join('');
+
+ */ console.log("werkt alles?");
+async function searchCountry() {
+    try {
+        const response2 = await _axiosDefault.default.get('https://restcountries.com/v2/name/{name}');
     } catch (e) {
         console.log(e);
         console.log(e.response);
         if (e.response.status === 500) errorMessage.textContent = "Er ging iets mis in de server";
     }
 }
-// Hier call ik de functie.
-fetchCountries();
 
 },{"axios":"1IeuP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"1IeuP":[function(require,module,exports) {
 module.exports = require('./lib/axios');
@@ -2086,6 +2078,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["1Mq12","5HwUs"], "5HwUs", "parcelRequirecb08")
+},{}]},["CxEYi","7z7IC"], "7z7IC", "parcelRequirecb08")
 
-//# sourceMappingURL=index.d56a3cb1.js.map
+//# sourceMappingURL=Opdracht 2.63a24244.js.map

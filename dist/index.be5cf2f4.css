@@ -11,35 +11,16 @@ var  root{
       body{
           margin: 0;
           box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /*-------------typografie---------------*/
+          font-family:"Semplicita Pro";
       }
-/*-------------Typografie---------------*/
 
 
-#countryList img{
-    width: 50px;
-    display: inline-block;
-    padding-top: 50px;
 
-}
-#countryList {
-    column-count: 3;
-    max-width: 1000px;
-    border-radius: 4px;
-    border: 1px solid lightgray;
-    background-color: #FAFAFA;
-    padding: 30px;
-}
 
-#countryList li {
-    list-style-type: none;
-    margin-left:120px;
-    font-family: "Semplicita Pro";
-
-}
-
-#countryList span{
-    font-size: 18px;
-}
 /*-------------kleuren landen ---------------*/
 
 .Africa{
@@ -84,5 +65,30 @@ var  root{
 .foto-landkaart{
     width: 60%;
     height: auto;
+}
+/*-------------Sectie 2 Lijst ---------------*/
+#countryList img{
+    width: 50px;
+    display: inline-block;
+    padding-top: 50px;
+
+}
+#countryList {
+    column-count: 3;
+    max-width: 1000px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    background-color: #FAFAFA;
+    padding: 30px;
+}
+
+#countryList li {
+    list-style-type: none;
+
+
+}
+
+#countryList span{
+    font-size: 18px;
 }
 /*# sourceMappingURL=index.be5cf2f4.css.map */
