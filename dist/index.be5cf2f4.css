@@ -1,12 +1,5 @@
 /*-------------Global styles---------------*/
-var  root{
-          --blue:#768abd;
-          --red: #c15b5d;
-          --yellow: #f8db81;
-          --lightgreen:#91c79b;
-          --darkgreen: #6d8e66;
-          --purple: #9256aa;
-      }
+
 
       body{
           margin: 0;
@@ -18,7 +11,39 @@ var  root{
           font-family:"Semplicita Pro";
       }
 
+.frame{
+    width: 400px;
+}
 
+#zoekenCountry{
+    background-color: lightgray;
+    padding: 50px 25px;
+    margin-top: 75px;
+}
+
+#CountrySearchResult{
+background-color: #FAFAFA;
+    box-shadow: 5px 8px 17px 6px rgba(75,82,74,0.62);
+    padding: 100px;
+    margin-top: 50px;
+}
+
+
+#CountrySearchResult li {
+    width: 500px;
+    list-style: none;
+}
+
+#CountrySearchResult img{
+    width:50px;
+    margin-right: 20px;
+}
+input[type=text]{
+ color: lightcoral;
+}
+input[type="submit"] {
+    background-color: orange;
+}
 
 
 /*-------------kleuren landen ---------------*/
@@ -91,4 +116,9 @@ var  root{
 #countryList span{
     font-size: 18px;
 }
+
+
+/*----------------------- Pagin Html2 ----------------------*/
+
+
 /*# sourceMappingURL=index.be5cf2f4.css.map */
